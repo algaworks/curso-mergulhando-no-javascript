@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array.from</title>
+</head>
+<body>
+  <script>
+    function greet () {
+      const args = Array.from(arguments, function (name) {
+        return  '!' + name
+      })
+
+      args.forEach(argument => {
+        console.log(`Hello, ${argument}`)
+      })
+    }
+  </script>
+</body>
+</html>

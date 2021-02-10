@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>O que é desestruturação</title>
+</head>
+<body>
+  <script>
+    const person = {
+      name: 'Italo',
+      age: 14
+    }
+
+    function introduce ({name, age}) {
+      console.log(`oi! meu nome é ${name} e eu tenho ${age} anos`)
+    }
+
+    const fruits = ['banana', 'morango', 'manga']
+
+    const [firstFruit, secondFruit] = fruits
+  </script>
+</body>
+</html>

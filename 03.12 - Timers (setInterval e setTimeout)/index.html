@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Argumentos de função</title>
+</head>
+<body>
+  <script>
+    const interval = setTimeout(() => {
+      console.log('executou')
+    }, 5000)
+
+    setTimeout(() => {
+      clearTimeout(interval)
+    }, 2000)
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Criando classes</title>
+</head>
+<body>
+  <script>
+    class Human {
+      hungry = true
+      name
+      age
+      sex
+
+      constructor (props) {
+        if (!props.name)
+          throw Error('Nome é obrigatório')
+        this.name = props.name
+        this.age = props.age
+        this.sex = props.sex
+      }
+
+      eat () {
+        this.hungry = false
+      }
+    }
+
+    const person = new Human({
+      // name: 'Lucas',
+      age: 34,
+      sex: 'male'
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desestruturando objetos</title>
+</head>
+<body>
+  <script>
+    const person = {
+      name: 'Italo',
+      age: 14,
+      contact: {
+        foo: {
+          bar: {
+            email: 'daniel.bonifacio@algaworks.com'
+          }
+        }
+      }
+    }
+
+    const { foo } = person
+  </script>
+</body>
+</html>

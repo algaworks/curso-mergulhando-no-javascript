@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promise</title>
+</head>
+<body>
+<script>
+  function sleep (ms) {
+    return new Promise(
+      resolve => { setTimeout(() => resolve(true), ms) }
+    )
+  }
+
+  async function handleClick () {
+    await sleep(5000)
+    return 'batata'
+  }
+
+</script>
+</body>
+</html>
